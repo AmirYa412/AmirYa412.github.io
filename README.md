@@ -1,11 +1,10 @@
 # resume
 
-Source for my personal résumé page, published via GitHub Pages.
+Source for my personal portfolio / résumé page, published via GitHub Pages.
 
-- `index.html` — landing page with **View Resume** / **Download PDF** actions and an inline PDF preview.
-- `resume.pdf` — the résumé itself.
-- `robots.txt` — asks well-behaved crawlers not to index the site.
-
-The page also sends `noindex, nofollow, noarchive` via a `<meta name="robots">` tag to discourage search-engine discovery. This is a discovery preference, **not** access control.
+- `index.html` — single-page profile: name, photo, summary, and résumé links.
+- `profile.jpg` — profile photo.
+- `resume.pdf` — the résumé itself (View / Download from the page).
+- `robots.txt` — crawler directives.
 
 Live page: https://amirya412.github.io/resume/

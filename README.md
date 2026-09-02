@@ -1,10 +1,19 @@
-# AmirYa412.github.io
+# amirya412.github.io
 
-Source for my personal portfolio / résumé page, published via GitHub Pages.
+My personal portfolio and résumé: a single self-contained page, published with GitHub Pages.
 
-- `index.html` - single page: profile, summary, résumé links, and expandable work history. Images and logos are inlined, so the page is fully self-contained.
-- `profile.jpg` - profile photo (also used for social link previews).
-- `resume.pdf` - the résumé itself (View / Download from the page).
-- `robots.txt` - crawler directives.
+**Live:** https://amirya412.github.io/
 
-Live page: https://amirya412.github.io/
+## 👤 About
+
+One static page (`index.html`) with my profile, a short summary, résumé links, and an expandable work history. All images, logos, and icons are inlined as data URIs, so the page has no external dependencies and loads as a single file.
+
+## 📁 Structure
+
+- `index.html` - the page (profile, about, résumé links, work history)
+- `resume.pdf` - the résumé (viewed / downloaded from the page)
+- `profile.jpg` - profile photo, also used for social link previews
+- `logos/` - company logo source files (inlined into the page)
+- `robots.txt` - crawler directives
+
+Plain HTML and CSS. No framework, no build step.

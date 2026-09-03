@@ -25,8 +25,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Ar
 .identity .about-label{margin:4px 0 14px}
 .about{color:#52525b;font-size:16.5px;text-align:left;margin:22px auto 0;max-width:420px}
 .about-2{margin-top:15px;margin-bottom:28px}
-.btns{display:flex;flex-wrap:wrap;gap:11px;justify-content:center}
-.btn{text-decoration:none;font-size:16px;font-weight:600;padding:12px 24px;border-radius:11px;border:1px solid #e4e4e7;color:#18181b;background:transparent;transition:background .15s}
+.btns{display:grid;grid-template-columns:repeat(auto-fit,minmax(195px,1fr));gap:11px;max-width:430px;margin:0 auto}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-size:17px;font-weight:600;padding:14px 14px;border-radius:12px;border:1px solid #e4e4e7;color:#18181b;background:transparent;transition:background .15s;white-space:nowrap}
+.bico{width:18px;height:18px;flex:none}
 .btn:hover{background:#f4f4f5}
 .btn.primary{background:#18181b;color:#fff;border-color:#18181b}.btn.primary:hover{background:#27272a}
 .work{background:#fff;padding:6px 22px 34px}
@@ -75,8 +76,8 @@ summary::-webkit-details-marker{display:none}
   .identity .about-label{margin:0 0 22px}
   .about{color:#52525b;font-size:17.5px;max-width:none;margin-top:26px}
   .about-2{margin-bottom:30px}
-  .btns{justify-content:flex-start;flex-wrap:nowrap;gap:14px}
-  .btns .btn{flex:0 0 auto;text-align:center;font-size:17px;padding:14px 30px}
+  .btns{max-width:440px;margin:0;gap:12px}
+  .btns .btn{font-size:17px;padding:15px 14px}
 
   .work{grid-area:work;background:#fff;
     padding:62px clamp(30px,6vw,140px) 62px clamp(24px,2.5vw,48px)}
@@ -108,8 +109,8 @@ summary::-webkit-details-marker{display:none}
     <p class="about about-2">I care about reliable CI/CD quality gates, eliminating flakiness, and finding creative solutions to difficult testing problems. I've worked across web, mobile, APIs, performance, and load testing, in both small teams and large engineering organizations. Whatever the environment, my goal stays the same: provide fast, honest feedback so quality enables shipping instead of slowing it down.</p>
     <p class="about about-2">Outside of work, I'm a lifelong gamer and PC enthusiast.</p>
     <div class="btns">
-      <a class="btn primary" href="resume.pdf" target="_blank" rel="noopener">View Resume</a>
-      <a class="btn" href="resume.pdf" download>Download PDF</a>
+      <a class="btn primary" href="resume.pdf" target="_blank" rel="noopener"><svg class="bico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>View Resume</a>
+      <a class="btn" href="resume.pdf" download><svg class="bico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 12 5 5 5-5"/><path d="M5 21h14"/></svg>Download Resume</a>
     </div>
   </div>
   <div class="work">
